@@ -1,0 +1,1329 @@
+{
+    "output_file": "settings.json",
+    "KhaosStatusCost": {
+        "type": "numberbox",
+        "value": 200,
+        "label": "Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Khaos Status"
+    },
+    "KhaosStatusMaxCost": {
+        "type": "numberbox",
+        "value": 200,
+        "label": "Maximum Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Khaos Status"
+    },
+    "KhaosStatusScaling": {
+        "type": "slider",
+        "value": 1,
+        "min": 1,
+        "max": 4,
+        "ticks": 0.1,
+        "label": "Scaling",
+        "tooltip": "Cost scaling per use.",
+        "group": "Khaos Status"
+    },
+    "KhaosStatusStartsOnCooldown": {
+        "type": "checkbox",
+        "value": false,
+        "label": "Starts on cooldown",
+        "tooltip": "Command will be put on cooldown when Khaos is started.",
+        "group": "Khaos Status"
+    },
+    "KhaosStatusCooldown": {
+        "type": "slider",
+        "value": 0,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Khaos Status"
+    },
+    "KhaosStatusUserCooldown": {
+        "type": "slider",
+        "value": 1,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "User Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Khaos Status"
+    },
+    "KhaosEquipmentCost": {
+        "type": "numberbox",
+        "value": 300,
+        "label": "Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Khaos Equipment"
+    },
+    "KhaosEquipmentMaxCost": {
+        "type": "numberbox",
+        "value": 1000,
+        "label": "Maximum Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Khaos Equipment"
+    },
+    "KhaosEquipmentScaling": {
+        "type": "slider",
+        "value": 1.5,
+        "min": 1,
+        "max": 4,
+        "ticks": 0.1,
+        "label": "Scaling",
+        "tooltip": "Cost scaling per use.",
+        "group": "Khaos Equipment"
+    },
+    "KhaosEquipmentStartsOnCooldown": {
+        "type": "checkbox",
+        "value": false,
+        "label": "Starts on cooldown",
+        "tooltip": "Command will be put on cooldown when Khaos is started.",
+        "group": "Khaos Equipment"
+    },
+    "KhaosEquipmentCooldown": {
+        "type": "slider",
+        "value": 5,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Khaos Equipment"
+    },
+    "KhaosEquipmentUserCooldown": {
+        "type": "slider",
+        "value": 6,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "User Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Khaos Equipment"
+    },
+    "KhaosStatsCost": {
+        "type": "numberbox",
+        "value": 400,
+        "label": "Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Khaos Stats"
+    },
+    "KhaosStatsMaxCost": {
+        "type": "numberbox",
+        "value": 1200,
+        "label": "Maximum Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Khaos Stats"
+    },
+    "KhaosStatsScaling": {
+        "type": "slider",
+        "value": 1.5,
+        "min": 1,
+        "max": 4,
+        "ticks": 0.1,
+        "label": "Scaling",
+        "tooltip": "Cost scaling per use.",
+        "group": "Khaos Stats"
+    },
+    "KhaosStatsStartsOnCooldown": {
+        "type": "checkbox",
+        "value": false,
+        "label": "Starts on cooldown",
+        "tooltip": "Command will be put on cooldown when Khaos is started.",
+        "group": "Khaos Stats"
+    },
+    "KhaosStatsCooldown": {
+        "type": "slider",
+        "value": 5,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Khaos Stats"
+    },
+    "KhaosStatsUserCooldown": {
+        "type": "slider",
+        "value": 6,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "User Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Khaos Stats"
+    },
+    "KhaosRelicsCost": {
+        "type": "numberbox",
+        "value": 1000,
+        "label": "Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Khaos Relics"
+    },
+    "KhaosRelicsMaxCost": {
+        "type": "numberbox",
+        "value": 8000,
+        "label": "Maximum Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Khaos Relics"
+    },
+    "KhaosRelicsScaling": {
+        "type": "slider",
+        "value": 2,
+        "min": 1,
+        "max": 4,
+        "ticks": 0.1,
+        "label": "Scaling",
+        "tooltip": "Cost scaling per use.",
+        "group": "Khaos Relics"
+    },
+    "KhaosRelicsStartsOnCooldown": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Starts on cooldown",
+        "tooltip": "Command will be put on cooldown when Khaos is started.",
+        "group": "Khaos Relics"
+    },
+    "KhaosRelicsCooldown": {
+        "type": "slider",
+        "value": 20,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Khaos Relics"
+    },
+    "KhaosRelicsUserCooldown": {
+        "type": "slider",
+        "value": 22,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "User Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Khaos Relics"
+    },
+    "PandorasBoxCost": {
+        "type": "numberbox",
+        "value": 1000,
+        "label": "Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Pandora's Box"
+    },
+    "PandorasBoxMaxCost": {
+        "type": "numberbox",
+        "value": 15000,
+        "label": "Maximum Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Pandora's Box"
+    },
+    "PandorasBoxScaling": {
+        "type": "slider",
+        "value": 2.3,
+        "min": 1,
+        "max": 4,
+        "ticks": 0.1,
+        "label": "Scaling",
+        "tooltip": "Cost scaling per use.",
+        "group": "Pandora's Box"
+    },
+    "PandorasBoxStartsOnCooldown": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Starts on cooldown",
+        "tooltip": "Command will be put on cooldown when Khaos is started.",
+        "group": "Pandora's Box"
+    },
+    "PandorasBoxCooldown": {
+        "type": "slider",
+        "value": 20,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Pandora's Box"
+    },
+    "PandorasBoxUserCooldown": {
+        "type": "slider",
+        "value": 22,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "User Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Pandora's Box"
+    },
+    "GambleCost": {
+        "type": "numberbox",
+        "value": 200,
+        "label": "Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Gamble"
+    },
+    "GambleMaxCost": {
+        "type": "numberbox",
+        "value": 3000,
+        "label": "Maximum Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Gamble"
+    },
+    "GambleScaling": {
+        "type": "slider",
+        "value": 2,
+        "min": 1,
+        "max": 4,
+        "ticks": 0.1,
+        "label": "Scaling",
+        "tooltip": "Cost scaling per use.",
+        "group": "Gamble"
+    },
+    "GambleStartsOnCooldown": {
+        "type": "checkbox",
+        "value": false,
+        "label": "Starts on cooldown",
+        "tooltip": "Command will be put on cooldown when Khaos is started.",
+        "group": "Gamble"
+    },
+    "GambleCooldown": {
+        "type": "slider",
+        "value": 1,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Gamble"
+    },
+    "GambleUserCooldown": {
+        "type": "slider",
+        "value": 2,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "User Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Gamble"
+    },
+    "BankruptCost": {
+        "type": "numberbox",
+        "value": 1000,
+        "label": "Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Bankrupt"
+    },
+    "BankruptMaxCost": {
+        "type": "numberbox",
+        "value": 8000,
+        "label": "Maximum Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Bankrupt"
+    },
+    "BankruptScaling": {
+        "type": "slider",
+        "value": 2,
+        "min": 1,
+        "max": 4,
+        "ticks": 0.1,
+        "label": "Scaling",
+        "tooltip": "Cost scaling per use.",
+        "group": "Bankrupt"
+    },
+    "BankruptStartsOnCooldown": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Starts on cooldown",
+        "tooltip": "Command will be put on cooldown when Khaos is started.",
+        "group": "Bankrupt"
+    },
+    "BankruptCooldown": {
+        "type": "slider",
+        "value": 20,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Bankrupt"
+    },
+    "BankruptUserCooldown": {
+        "type": "slider",
+        "value": 22,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "User Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Bankrupt"
+    },
+    "WeakenCost": {
+        "type": "numberbox",
+        "value": 1000,
+        "label": "Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Weaken"
+    },
+    "WeakenMaxCost": {
+        "type": "numberbox",
+        "value": 15000,
+        "label": "Maximum Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Weaken"
+    },
+    "WeakenScaling": {
+        "type": "slider",
+        "value": 2.3,
+        "min": 1,
+        "max": 4,
+        "ticks": 0.1,
+        "label": "Scaling",
+        "tooltip": "Cost scaling per use.",
+        "group": "Weaken"
+    },
+    "WeakenStartsOnCooldown": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Starts on cooldown",
+        "tooltip": "Command will be put on cooldown when Khaos is started.",
+        "group": "Weaken"
+    },
+    "WeakenCooldown": {
+        "type": "slider",
+        "value": 24,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Weaken"
+    },
+    "WeakenUserCooldown": {
+        "type": "slider",
+        "value": 26,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "User Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Weaken"
+    },
+    "RespawnBossesCost": {
+        "type": "numberbox",
+        "value": 400,
+        "label": "Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Respawn Bosses"
+    },
+    "RespawnBossesMaxCost": {
+        "type": "numberbox",
+        "value": 1200,
+        "label": "Maximum Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Respawn Bosses"
+    },
+    "RespawnBossesScaling": {
+        "type": "slider",
+        "value": 1.5,
+        "min": 1,
+        "max": 4,
+        "ticks": 0.1,
+        "label": "Scaling",
+        "tooltip": "Cost scaling per use.",
+        "group": "Respawn Bosses"
+    },
+    "RespawnBossesStartsOnCooldown": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Starts on cooldown",
+        "tooltip": "Command will be put on cooldown when Khaos is started.",
+        "group": "Respawn Bosses"
+    },
+    "RespawnBossesCooldown": {
+        "type": "slider",
+        "value": 10,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Respawn Bosses"
+    },
+    "RespawnBossesUserCooldown": {
+        "type": "slider",
+        "value": 11,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "User Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Respawn Bosses"
+    },
+    "HonestGamerCost": {
+        "type": "numberbox",
+        "value": 300,
+        "label": "Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Honest Gamer"
+    },
+    "HonestGamerMaxCost": {
+        "type": "numberbox",
+        "value": 1000,
+        "label": "Maximum Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Honest Gamer"
+    },
+    "HonestGamerScaling": {
+        "type": "slider",
+        "value": 1.2,
+        "min": 1,
+        "max": 4,
+        "ticks": 0.1,
+        "label": "Scaling",
+        "tooltip": "Cost scaling per use.",
+        "group": "Honest Gamer"
+    },
+    "HonestGamerStartsOnCooldown": {
+        "type": "checkbox",
+        "value": false,
+        "label": "Starts on cooldown",
+        "tooltip": "Command will be put on cooldown when Khaos is started.",
+        "group": "Honest Gamer"
+    },
+    "HonestGamerCooldown": {
+        "type": "slider",
+        "value": 4,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Honest Gamer"
+    },
+    "HonestGamerUserCooldown": {
+        "type": "slider",
+        "value": 5,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "User Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Honest Gamer"
+    },
+    "SubweaponsOnlyCost": {
+        "type": "numberbox",
+        "value": 600,
+        "label": "Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Subweapons Only"
+    },
+    "SubweaponsOnlyMaxCost": {
+        "type": "numberbox",
+        "value": 1300,
+        "label": "Maximum Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Subweapons Only"
+    },
+    "SubweaponsOnlyScaling": {
+        "type": "slider",
+        "value": 1.2,
+        "min": 1,
+        "max": 4,
+        "ticks": 0.1,
+        "label": "Scaling",
+        "tooltip": "Cost scaling per use.",
+        "group": "Subweapons Only"
+    },
+    "SubweaponsOnlyStartsOnCooldown": {
+        "type": "checkbox",
+        "value": false,
+        "label": "Starts on cooldown",
+        "tooltip": "Command will be put on cooldown when Khaos is started.",
+        "group": "Subweapons Only"
+    },
+    "SubweaponsOnlyCooldown": {
+        "type": "slider",
+        "value": 4,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Subweapons Only"
+    },
+    "SubweaponsOnlyUserCooldown": {
+        "type": "slider",
+        "value": 5,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "User Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Subweapons Only"
+    },
+    "CrippleCost": {
+        "type": "numberbox",
+        "value": 300,
+        "label": "Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Cripple"
+    },
+    "CrippleMaxCost": {
+        "type": "numberbox",
+        "value": 3000,
+        "label": "Maximum Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Cripple"
+    },
+    "CrippleScaling": {
+        "type": "slider",
+        "value": 2,
+        "min": 1,
+        "max": 4,
+        "ticks": 0.1,
+        "label": "Scaling",
+        "tooltip": "Cost scaling per use.",
+        "group": "Cripple"
+    },
+    "CrippleStartsOnCooldown": {
+        "type": "checkbox",
+        "value": false,
+        "label": "Starts on cooldown",
+        "tooltip": "Command will be put on cooldown when Khaos is started.",
+        "group": "Cripple"
+    },
+    "CrippleCooldown": {
+        "type": "slider",
+        "value": 5,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Cripple"
+    },
+    "CrippleUserCooldown": {
+        "type": "slider",
+        "value": 6,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "User Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Cripple"
+    },
+    "BloodManaCost": {
+        "type": "numberbox",
+        "value": 200,
+        "label": "Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Blood Mana"
+    },
+    "BloodManaMaxCost": {
+        "type": "numberbox",
+        "value": 1300,
+        "label": "Maximum Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Blood Mana"
+    },
+    "BloodManaScaling": {
+        "type": "slider",
+        "value": 1.5,
+        "min": 1,
+        "max": 4,
+        "ticks": 0.1,
+        "label": "Scaling",
+        "tooltip": "Cost scaling per use.",
+        "group": "Blood Mana"
+    },
+    "BloodManaStartsOnCooldown": {
+        "type": "checkbox",
+        "value": false,
+        "label": "Starts on cooldown",
+        "tooltip": "Command will be put on cooldown when Khaos is started.",
+        "group": "Blood Mana"
+    },
+    "BloodManaCooldown": {
+        "type": "slider",
+        "value": 4,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Blood Mana"
+    },
+    "BloodManaUserCooldown": {
+        "type": "slider",
+        "value": 5,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "User Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Blood Mana"
+    },
+    "ThirstCost": {
+        "type": "numberbox",
+        "value": 500,
+        "label": "Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Thirst"
+    },
+    "ThirstMaxCost": {
+        "type": "numberbox",
+        "value": 3000,
+        "label": "Maximum Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Thirst"
+    },
+    "ThirstScaling": {
+        "type": "slider",
+        "value": 1.5,
+        "min": 1,
+        "max": 4,
+        "ticks": 0.1,
+        "label": "Scaling",
+        "tooltip": "Cost scaling per use.",
+        "group": "Thirst"
+    },
+    "ThirstStartsOnCooldown": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Starts on cooldown",
+        "tooltip": "Command will be put on cooldown when Khaos is started.",
+        "group": "Thirst"
+    },
+    "ThirstCooldown": {
+        "type": "slider",
+        "value": 4,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Thirst"
+    },
+    "ThirstUserCooldown": {
+        "type": "slider",
+        "value": 5,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "User Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Thirst"
+    },
+    "HordeCost": {
+        "type": "numberbox",
+        "value": 500,
+        "label": "Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Horde"
+    },
+    "HordeMaxCost": {
+        "type": "numberbox",
+        "value": 3000,
+        "label": "Maximum Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Horde"
+    },
+    "HordeScaling": {
+        "type": "slider",
+        "value": 2,
+        "min": 1,
+        "max": 4,
+        "ticks": 0.1,
+        "label": "Scaling",
+        "tooltip": "Cost scaling per use.",
+        "group": "Horde"
+    },
+    "HordeStartsOnCooldown": {
+        "type": "checkbox",
+        "value": false,
+        "label": "Starts on cooldown",
+        "tooltip": "Command will be put on cooldown when Khaos is started.",
+        "group": "Horde"
+    },
+    "HordeCooldown": {
+        "type": "slider",
+        "value": 5,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Horde"
+    },
+    "HordeUserCooldown": {
+        "type": "slider",
+        "value": 6,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "User Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Horde"
+    },
+    "EnduranceCost": {
+        "type": "numberbox",
+        "value": 700,
+        "label": "Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Endurance"
+    },
+    "EnduranceMaxCost": {
+        "type": "numberbox",
+        "value": 7000,
+        "label": "Maximum Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Endurance"
+    },
+    "EnduranceScaling": {
+        "type": "slider",
+        "value": 2,
+        "min": 1,
+        "max": 4,
+        "ticks": 0.1,
+        "label": "Scaling",
+        "tooltip": "Cost scaling per use.",
+        "group": "Endurance"
+    },
+    "EnduranceStartsOnCooldown": {
+        "type": "checkbox",
+        "value": false,
+        "label": "Starts on cooldown",
+        "tooltip": "Command will be put on cooldown when Khaos is started.",
+        "group": "Endurance"
+    },
+    "EnduranceCooldown": {
+        "type": "slider",
+        "value": 4,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Endurance"
+    },
+    "EnduranceUserCooldown": {
+        "type": "slider",
+        "value": 5,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "User Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Endurance"
+    },
+    "VampireCost": {
+        "type": "numberbox",
+        "value": 100,
+        "label": "Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Vampire"
+    },
+    "VampireMaxCost": {
+        "type": "numberbox",
+        "value": 400,
+        "label": "Maximum Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Vampire"
+    },
+    "VampireScaling": {
+        "type": "slider",
+        "value": 1.3,
+        "min": 1,
+        "max": 4,
+        "ticks": 0.1,
+        "label": "Scaling",
+        "tooltip": "Cost scaling per use.",
+        "group": "Vampire"
+    },
+    "VampireStartsOnCooldown": {
+        "type": "checkbox",
+        "value": false,
+        "label": "Starts on cooldown",
+        "tooltip": "Command will be put on cooldown when Khaos is started.",
+        "group": "Vampire"
+    },
+    "VampireCooldown": {
+        "type": "slider",
+        "value": 4,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Vampire"
+    },
+    "VampireUserCooldown": {
+        "type": "slider",
+        "value": 5,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "User Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Vampire"
+    },
+    "LightHelpCost": {
+        "type": "numberbox",
+        "value": 100,
+        "label": "Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Light Help"
+    },
+    "LightHelpMaxCost": {
+        "type": "numberbox",
+        "value": 100,
+        "label": "Maximum Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Light Help"
+    },
+    "LightHelpScaling": {
+        "type": "slider",
+        "value": 1,
+        "min": 1,
+        "max": 4,
+        "ticks": 0.1,
+        "label": "Scaling",
+        "tooltip": "Cost scaling per use.",
+        "group": "Light Help"
+    },
+    "LightHelpStartsOnCooldown": {
+        "type": "checkbox",
+        "value": false,
+        "label": "Starts on cooldown",
+        "tooltip": "Command will be put on cooldown when Khaos is started.",
+        "group": "Light Help"
+    },
+    "LightHelpCooldown": {
+        "type": "slider",
+        "value": 0,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Light Help"
+    },
+    "LightHelpUserCooldown": {
+        "type": "slider",
+        "value": 1,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "User Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Light Help"
+    },
+    "MediumHelpCost": {
+        "type": "numberbox",
+        "value": 300,
+        "label": "Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Medium Help"
+    },
+    "MediumHelpMaxCost": {
+        "type": "numberbox",
+        "value": 1000,
+        "label": "Maximum Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Medium Help"
+    },
+    "MediumHelpScaling": {
+        "type": "slider",
+        "value": 1.5,
+        "min": 1,
+        "max": 4,
+        "ticks": 0.1,
+        "label": "Scaling",
+        "tooltip": "Cost scaling per use.",
+        "group": "Medium Help"
+    },
+    "MediumHelpStartsOnCooldown": {
+        "type": "checkbox",
+        "value": false,
+        "label": "Starts on cooldown",
+        "tooltip": "Command will be put on cooldown when Khaos is started.",
+        "group": "Medium Help"
+    },
+    "MediumHelpCooldown": {
+        "type": "slider",
+        "value": 1,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Medium Help"
+    },
+    "MediumHelpUserCooldown": {
+        "type": "slider",
+        "value": 2,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "User Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Medium Help"
+    },
+    "HeavyHelpCost": {
+        "type": "numberbox",
+        "value": 500,
+        "label": "Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Heavy Help"
+    },
+    "HeavyHelpMaxCost": {
+        "type": "numberbox",
+        "value": 2500,
+        "label": "Maximum Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Heavy Help"
+    },
+    "HeavyHelpScaling": {
+        "type": "slider",
+        "value": 1.5,
+        "min": 1,
+        "max": 4,
+        "ticks": 0.1,
+        "label": "Scaling",
+        "tooltip": "Cost scaling per use.",
+        "group": "Heavy Help"
+    },
+    "HeavyHelpStartsOnCooldown": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Starts on cooldown",
+        "tooltip": "Command will be put on cooldown when Khaos is started.",
+        "group": "Heavy Help"
+    },
+    "HeavyHelpCooldown": {
+        "type": "slider",
+        "value": 4,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Heavy Help"
+    },
+    "HeavyHelpUserCooldown": {
+        "type": "slider",
+        "value": 5,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "User Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Heavy Help"
+    },
+    "BattleOrdersCost": {
+        "type": "numberbox",
+        "value": 200,
+        "label": "Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Battle Orders"
+    },
+    "BattleOrdersMaxCost": {
+        "type": "numberbox",
+        "value": 1000,
+        "label": "Maximum Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Battle Orders"
+    },
+    "BattleOrdersScaling": {
+        "type": "slider",
+        "value": 1.5,
+        "min": 1,
+        "max": 4,
+        "ticks": 0.1,
+        "label": "Scaling",
+        "tooltip": "Cost scaling per use.",
+        "group": "Battle Orders"
+    },
+    "BattleOrdersStartsOnCooldown": {
+        "type": "checkbox",
+        "value": false,
+        "label": "Starts on cooldown",
+        "tooltip": "Command will be put on cooldown when Khaos is started.",
+        "group": "Battle Orders"
+    },
+    "BattleOrdersCooldown": {
+        "type": "slider",
+        "value": 3,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Battle Orders"
+    },
+    "BattleOrdersUserCooldown": {
+        "type": "slider",
+        "value": 4,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "User Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Battle Orders"
+    },
+    "MagicianCost": {
+        "type": "numberbox",
+        "value": 300,
+        "label": "Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Magician"
+    },
+    "MagicianMaxCost": {
+        "type": "numberbox",
+        "value": 1000,
+        "label": "Maximum Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Magician"
+    },
+    "MagicianScaling": {
+        "type": "slider",
+        "value": 1.5,
+        "min": 1,
+        "max": 4,
+        "ticks": 0.1,
+        "label": "Scaling",
+        "tooltip": "Cost scaling per use.",
+        "group": "Magician"
+    },
+    "MagicianStartsOnCooldown": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Starts on cooldown",
+        "tooltip": "Command will be put on cooldown when Khaos is started.",
+        "group": "Magician"
+    },
+    "MagicianCooldown": {
+        "type": "slider",
+        "value": 4,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Magician"
+    },
+    "MagicianUserCooldown": {
+        "type": "slider",
+        "value": 5,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "User Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Magician"
+    },
+    "MeltyBloodCost": {
+        "type": "numberbox",
+        "value": 500,
+        "label": "Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Melty Blood"
+    },
+    "MeltyBloodMaxCost": {
+        "type": "numberbox",
+        "value": 2000,
+        "label": "Maximum Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Melty Blood"
+    },
+    "MeltyBloodScaling": {
+        "type": "slider",
+        "value": 1.5,
+        "min": 1,
+        "max": 4,
+        "ticks": 0.1,
+        "label": "Scaling",
+        "tooltip": "Cost scaling per use.",
+        "group": "Melty Blood"
+    },
+    "MeltyBloodStartsOnCooldown": {
+        "type": "checkbox",
+        "value": false,
+        "label": "Starts on cooldown",
+        "tooltip": "Command will be put on cooldown when Khaos is started.",
+        "group": "Melty Blood"
+    },
+    "MeltyBloodCooldown": {
+        "type": "slider",
+        "value": 4,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Melty Blood"
+    },
+    "MeltyBloodUserCooldown": {
+        "type": "slider",
+        "value": 5,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "User Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Melty Blood"
+    },
+    "FourBeastsCost": {
+        "type": "numberbox",
+        "value": 1000,
+        "label": "Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Four Beasts"
+    },
+    "FourBeastsMaxCost": {
+        "type": "numberbox",
+        "value": 4000,
+        "label": "Maximum Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Four Beasts"
+    },
+    "FourBeastsScaling": {
+        "type": "slider",
+        "value": 2,
+        "min": 1,
+        "max": 4,
+        "ticks": 0.1,
+        "label": "Scaling",
+        "tooltip": "Cost scaling per use.",
+        "group": "Four Beasts"
+    },
+    "FourBeastsStartsOnCooldown": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Starts on cooldown",
+        "tooltip": "Command will be put on cooldown when Khaos is started.",
+        "group": "Four Beasts"
+    },
+    "FourBeastsCooldown": {
+        "type": "slider",
+        "value": 4,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Four Beasts"
+    },
+    "FourBeastsUserCooldown": {
+        "type": "slider",
+        "value": 5,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "User Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Four Beasts"
+    },
+    "ZaWarudoCost": {
+        "type": "numberbox",
+        "value": 300,
+        "label": "Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Za Warudo"
+    },
+    "ZaWarudoMaxCost": {
+        "type": "numberbox",
+        "value": 1500,
+        "label": "Maximum Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Za Warudo"
+    },
+    "ZaWarudoScaling": {
+        "type": "slider",
+        "value": 1.5,
+        "min": 1,
+        "max": 4,
+        "ticks": 0.1,
+        "label": "Scaling",
+        "tooltip": "Cost scaling per use.",
+        "group": "Za Warudo"
+    },
+    "ZaWarudoStartsOnCooldown": {
+        "type": "checkbox",
+        "value": false,
+        "label": "Starts on cooldown",
+        "tooltip": "Command will be put on cooldown when Khaos is started.",
+        "group": "Za Warudo"
+    },
+    "ZaWarudoCooldown": {
+        "type": "slider",
+        "value": 4,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Za Warudo"
+    },
+    "ZaWarudoUserCooldown": {
+        "type": "slider",
+        "value": 5,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "User Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Za Warudo"
+    },
+    "HasteCost": {
+        "type": "numberbox",
+        "value": 500,
+        "label": "Cost",
+        "tooltip": "Command starting cost.",
+        "group": "Haste"
+    },
+    "HasteMaxCost": {
+        "type": "numberbox",
+        "value": 2000,
+        "label": "Maximum Cost",
+        "tooltip": "Command cannot scale price above this value.",
+        "group": "Haste"
+    },
+    "HasteScaling": {
+        "type": "slider",
+        "value": 1.5,
+        "min": 1,
+        "max": 4,
+        "ticks": 0.1,
+        "label": "Scaling",
+        "tooltip": "Cost scaling per use.",
+        "group": "Haste"
+    },
+    "HasteStartsOnCooldown": {
+        "type": "checkbox",
+        "value": false,
+        "label": "Starts on cooldown",
+        "tooltip": "Command will be put on cooldown when Khaos is started.",
+        "group": "Haste"
+    },
+    "HasteCooldown": {
+        "type": "slider",
+        "value": 4,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Haste"
+    },
+    "HasteUserCooldown": {
+        "type": "slider",
+        "value": 51,
+        "min": 0,
+        "max": 100,
+        "ticks": 1,
+        "label": "User Cooldown (minutes)",
+        "tooltip": "How long the command should go on cooldown for",
+        "group": "Haste"
+    }
+}

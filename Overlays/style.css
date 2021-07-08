@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 7vw;
+    color: white;
+    -webkit-text-stroke: 0.08vw black;
+    text-align: center;
+}
+
+.smaller-font {
+    font-size: 5vw;
+}
+
+.hidden {
+    display: none;
+}
+
+.khaos {
+    padding: 1vw;
+    margin: 1vw;
+    display: flex;
+    flex-direction: column;
+    border: 1vw solid slategray;
+    border-collapse: collapse;
+    border-radius: 3vw;
+}
+
+.khaos-header {
+    background-color: rgba(17, 0, 17, 1);
+    border: 1vw solid rgba(17, 0, 17, 1);
+    border-collapse: collapse;
+    border-radius: 3vw 3vw 0 0;
+    display: flex;
+    flex-grow: 1;
+}
+
+#khaos-slideshow {
+    line-height: 7vw;
+}
+
+.khaos-header>div {
+    flex-grow: 1;
+}
+
+.command-header {
+    padding: 1vw;
+    background-color: rgba(17, 0, 17, 1);
+}
+
+.khaos-container {
+    display: flex;
+}
+
+.khaos-commands {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex-shrink: 1;
+}
+
+.khaos-prices {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex-shrink: 1;
+}
+
+.khaos-cooldowns {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex-shrink: 1;
+    flex-wrap: nowrap;
+}
+
+.command {
+    text-align: left;
+}
+
+.command-cooldown {
+    text-align: right;
+}
+
+.command-icon {
+    image-rendering: pixelated;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    object-fit: fill;
+    height: 6vw;
+    width: 6vw;
+}
+
+.onCooldown {
+    color: grey;
+}
