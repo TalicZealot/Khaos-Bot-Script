@@ -13,7 +13,7 @@ ScriptName = "SotN Khaos Script"
 Website = "https://taliczealot.github.io/"
 Description = "Enable chat interactivity for the Khaos tool for Symphony of the Night"
 Creator = "TalicZealot"
-Version = "1.0.0.0"
+Version = "1.0.1"
 
 #---------------------------
 #   Define Classes
@@ -222,24 +222,6 @@ class Settings(object):
         except ValueError:
             Parent.Log(ScriptName, "Failed to save settings to file.")
 
-class UIConfig(object):
-    # Load in saved settings file if available else set default values.
-    def __init__(self, uiconfigfile=None):
-        try:
-            with codecs.open(uiconfigfile, encoding="utf-8-sig", mode="r") as f:
-                self.__dict__ = json.load(f, encoding="utf-8", object_pairs_hook=OrderedDict)
-        except:
-            Parent.SendStreamWhisper(Parent.GetChannelName(), "Failed to read UIConfig file: " + str(sys.exc_info()[1]))
-
-    # Save UI Config contained within to .json file.
-    def Save(self, uiconfigfile):
-        if len(self.__dict__) > 0:
-            try:
-                with codecs.open(uiconfigfile, encoding="utf-8-sig", mode="w+") as f:
-                    json.dump(self.__dict__, f, encoding="utf-8", ensure_ascii=False)
-            except:
-                Parent.SendStreamWhisper(Parent.GetChannelName(), "Failed to save ui config to file.")
-
 class Command:
     def __init__(self, command, index, type, cost, maxCost, scaling, cooldown, userCooldown, startsOnCooldown):
         self.command = command
@@ -291,7 +273,6 @@ class Command:
                     Parent.SendStreamMessage("New {0} cost: {1} {2}".format(self.command, self.cost, Khaos["currency"]))
                 return
             else:
-                Parent.SendStreamMessage('Not enough currency')
                 return
 
 class CommandEncoder(JSONEncoder):
@@ -302,7 +283,6 @@ class CommandEncoder(JSONEncoder):
 #   Define Variables
 #---------------------------
 SettingsFile = os.path.join(os.path.dirname(__file__), "settings.json")
-#UIConfigFile = os.path.join(os.path.dirname(__file__), "UI_Config.json")
 OverlayCommandsFile = os.path.join(os.path.dirname(__file__) + "/Overlays/", "commands.js")
 
 Khaos = {
@@ -320,9 +300,6 @@ def Init():
     global ScriptSettings
     ScriptSettings = Settings(SettingsFile)
     ScriptSettings.Save(SettingsFile)
-    #global UIConfigs
-    #UIConfigs = UIConfig(UIConfigFile)
-    #UIConfigs.Save(UIConfigFile)
     Khaos["currency"] = Parent.GetCurrencyName()
 
     # Load commands
@@ -402,12 +379,13 @@ def Execute(data):
 #   Helper Functions
 #---------------------------------------
 def HasCurrency(User, UserName, cost):
-    pointsRemaining = Parent.GetPoints(User)
     if (cost == 0) or (Parent.RemovePoints(User, UserName, cost)):
+        pointsRemaining = Parent.GetPoints(User)
         Parent.SendStreamWhisper(User,"{0} remaining: {1}".format(Khaos["currency"], pointsRemaining))
         return True
     else:
-        Parent.SendStreamWhisper(User,"Not enough {0}. Current points{1}".format(Khaos["currency"], pointsRemaining))
+        currentPoints = Parent.GetPoints(User)
+        Parent.SendStreamWhisper(User,"Not enough {0}. Current {0}: {1}".format(Khaos["currency"], currentPoints))
         return False
 
 def ActivateStartingCooldowns():
@@ -420,14 +398,6 @@ def ActivateStartingCooldowns():
 #---------------------------------------
 def Tick():
     return
-    
-#---------------------------
-#   Parse method
-#---------------------------
-def Parse(parseString, userid, username, targetid, targetname, message):
-    if "$myparameter" in parseString:
-        return parseString.replace("$myparameter","I am a cat!")
-    return parseString
 
 #---------------------------------------
 #   Chatbot Save Settings Function
