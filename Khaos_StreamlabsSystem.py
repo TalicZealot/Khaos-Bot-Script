@@ -328,7 +328,7 @@ def Init():
     ActionCommands["heavyhelp"] = Command("heavyhelp", 19, 2, ScriptSettings.HeavyHelpCost, ScriptSettings.HeavyHelpMaxCost, ScriptSettings.HeavyHelpScaling, ScriptSettings.HeavyHelpCooldown, ScriptSettings.HeavyHelpUserCooldown, ScriptSettings.HeavyHelpStartsOnCooldown)
     ActionCommands["battleorders"] = Command("battleorders", 20, 2, ScriptSettings.BattleOrdersCost, ScriptSettings.BattleOrdersMaxCost, ScriptSettings.BattleOrdersScaling, ScriptSettings.BattleOrdersCooldown, ScriptSettings.BattleOrdersUserCooldown, ScriptSettings.BattleOrdersStartsOnCooldown)
     ActionCommands["magician"] = Command("magician", 21, 2, ScriptSettings.MagicianCost, ScriptSettings.MagicianMaxCost, ScriptSettings.MagicianScaling, ScriptSettings.MagicianCooldown, ScriptSettings.MagicianUserCooldown, ScriptSettings.MagicianStartsOnCooldown)
-    ActionCommands["meltyblood"] = Command("meltyblood", 22, 2, ScriptSettings.MeltyBloodCost, ScriptSettings.MeltyBloodMaxCost, ScriptSettings.MeltyBloodScaling, ScriptSettings.MeltyBloodCooldown, ScriptSettings.MeltyBloodUserCooldown, ScriptSettings.MeltyBloodStartsOnCooldown)
+    ActionCommands["melty"] = Command("melty", 22, 2, ScriptSettings.MeltyBloodCost, ScriptSettings.MeltyBloodMaxCost, ScriptSettings.MeltyBloodScaling, ScriptSettings.MeltyBloodCooldown, ScriptSettings.MeltyBloodUserCooldown, ScriptSettings.MeltyBloodStartsOnCooldown)
     ActionCommands["fourbeasts"] = Command("fourbeasts", 23, 2, ScriptSettings.FourBeastsCost, ScriptSettings.FourBeastsMaxCost, ScriptSettings.FourBeastsScaling, ScriptSettings.FourBeastsCooldown, ScriptSettings.FourBeastsUserCooldown, ScriptSettings.FourBeastsStartsOnCooldown)
     ActionCommands["zawarudo"] = Command("zawarudo", 24, 2, ScriptSettings.ZaWarudoCost, ScriptSettings.ZaWarudoMaxCost, ScriptSettings.ZaWarudoScaling, ScriptSettings.ZaWarudoCooldown, ScriptSettings.ZaWarudoUserCooldown, ScriptSettings.ZaWarudoStartsOnCooldown)
     ActionCommands["haste"] = Command("haste", 25, 2, ScriptSettings.HasteCost, ScriptSettings.HasteMaxCost, ScriptSettings.HasteScaling, ScriptSettings.HasteCooldown, ScriptSettings.HasteUserCooldown, ScriptSettings.HasteStartsOnCooldown)
@@ -379,7 +379,9 @@ def Execute(data):
 #   Helper Functions
 #---------------------------------------
 def HasCurrency(User, UserName, cost):
-    if (cost == 0) or (Parent.RemovePoints(User, UserName, cost)):
+    if (cost == 0):
+        return true
+    elif (Parent.RemovePoints(User, UserName, cost)):
         pointsRemaining = Parent.GetPoints(User)
         Parent.SendStreamWhisper(User,"{0} remaining: {1}".format(Khaos["currency"], pointsRemaining))
         return True
