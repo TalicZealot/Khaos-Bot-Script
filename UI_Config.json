@@ -1,5 +1,12 @@
 {
     "output_file": "settings.json",
+    "KhaosStatusEnabled": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Enable Khaos Status",
+        "tooltip": "Command will be enabled for usage.",
+        "group": "Khaos Status"
+    },
     "KhaosStatusCost": {
         "type": "numberbox",
         "value": 200,
@@ -50,6 +57,13 @@
         "label": "User Cooldown (minutes)",
         "tooltip": "How long the command should go on cooldown for",
         "group": "Khaos Status"
+    },
+    "KhaosEquipmentEnabled": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Enable the command",
+        "tooltip": "Command will be enabled for usage.",
+        "group": "Khaos Equipment"
     },
     "KhaosEquipmentCost": {
         "type": "numberbox",
@@ -102,6 +116,13 @@
         "tooltip": "How long the command should go on cooldown for",
         "group": "Khaos Equipment"
     },
+    "KhaosStatsEnabled": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Enable the command",
+        "tooltip": "Command will be enabled for usage.",
+        "group": "Khaos Stats"
+    },
     "KhaosStatsCost": {
         "type": "numberbox",
         "value": 400,
@@ -152,6 +173,13 @@
         "label": "User Cooldown (minutes)",
         "tooltip": "How long the command should go on cooldown for",
         "group": "Khaos Stats"
+    },
+    "KhaosRelicsEnabled": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Enable the command",
+        "tooltip": "Command will be enabled for usage.",
+        "group": "Khaos Relics"
     },
     "KhaosRelicsCost": {
         "type": "numberbox",
@@ -204,6 +232,13 @@
         "tooltip": "How long the command should go on cooldown for",
         "group": "Khaos Relics"
     },
+    "PandorasBoxEnabled": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Enable the command",
+        "tooltip": "Command will be enabled for usage.",
+        "group": "Pandora's Box"
+    },
     "PandorasBoxCost": {
         "type": "numberbox",
         "value": 1000,
@@ -254,6 +289,13 @@
         "label": "User Cooldown (minutes)",
         "tooltip": "How long the command should go on cooldown for",
         "group": "Pandora's Box"
+    },
+    "GambleEnabled": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Enable the command",
+        "tooltip": "Command will be enabled for usage.",
+        "group": "Gamble"
     },
     "GambleCost": {
         "type": "numberbox",
@@ -306,6 +348,13 @@
         "tooltip": "How long the command should go on cooldown for",
         "group": "Gamble"
     },
+    "BankruptEnabled": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Enable the command",
+        "tooltip": "Command will be enabled for usage.",
+        "group": "Bankrupt"
+    },
     "BankruptCost": {
         "type": "numberbox",
         "value": 1000,
@@ -356,6 +405,13 @@
         "label": "User Cooldown (minutes)",
         "tooltip": "How long the command should go on cooldown for",
         "group": "Bankrupt"
+    },
+    "WeakenEnabled": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Enable the command",
+        "tooltip": "Command will be enabled for usage.",
+        "group": "Weaken"
     },
     "WeakenCost": {
         "type": "numberbox",
@@ -408,6 +464,13 @@
         "tooltip": "How long the command should go on cooldown for",
         "group": "Weaken"
     },
+    "RespawnBossesEnabled": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Enable the command",
+        "tooltip": "Command will be enabled for usage.",
+        "group": "Respawn Bosses"
+    },
     "RespawnBossesCost": {
         "type": "numberbox",
         "value": 400,
@@ -458,6 +521,13 @@
         "label": "User Cooldown (minutes)",
         "tooltip": "How long the command should go on cooldown for",
         "group": "Respawn Bosses"
+    },
+    "HonestGamerEnabled": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Enable the command",
+        "tooltip": "Command will be enabled for usage.",
+        "group": "Honest Gamer"
     },
     "HonestGamerCost": {
         "type": "numberbox",
@@ -510,6 +580,13 @@
         "tooltip": "How long the command should go on cooldown for",
         "group": "Honest Gamer"
     },
+    "SubweaponsOnlyEnabled": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Enable the command",
+        "tooltip": "Command will be enabled for usage.",
+        "group": "Subweapons Only"
+    },
     "SubweaponsOnlyCost": {
         "type": "numberbox",
         "value": 600,
@@ -560,6 +637,13 @@
         "label": "User Cooldown (minutes)",
         "tooltip": "How long the command should go on cooldown for",
         "group": "Subweapons Only"
+    },
+    "CrippleEnabled": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Enable the command",
+        "tooltip": "Command will be enabled for usage.",
+        "group": "Cripple"
     },
     "CrippleCost": {
         "type": "numberbox",
@@ -612,6 +696,13 @@
         "tooltip": "How long the command should go on cooldown for",
         "group": "Cripple"
     },
+    "BloodManaEnabled": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Enable the command",
+        "tooltip": "Command will be enabled for usage.",
+        "group": "Blood Mana"
+    },
     "BloodManaCost": {
         "type": "numberbox",
         "value": 200,
@@ -662,6 +753,13 @@
         "label": "User Cooldown (minutes)",
         "tooltip": "How long the command should go on cooldown for",
         "group": "Blood Mana"
+    },
+    "ThirstEnabled": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Enable the command",
+        "tooltip": "Command will be enabled for usage.",
+        "group": "Thirst"
     },
     "ThirstCost": {
         "type": "numberbox",
@@ -714,6 +812,13 @@
         "tooltip": "How long the command should go on cooldown for",
         "group": "Thirst"
     },
+    "HordeEnabled": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Enable the command",
+        "tooltip": "Command will be enabled for usage.",
+        "group": "Horde"
+    },
     "HordeCost": {
         "type": "numberbox",
         "value": 500,
@@ -764,6 +869,13 @@
         "label": "User Cooldown (minutes)",
         "tooltip": "How long the command should go on cooldown for",
         "group": "Horde"
+    },
+    "EnduranceEnabled": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Enable the command",
+        "tooltip": "Command will be enabled for usage.",
+        "group": "Endurance"
     },
     "EnduranceCost": {
         "type": "numberbox",
@@ -816,6 +928,13 @@
         "tooltip": "How long the command should go on cooldown for",
         "group": "Endurance"
     },
+    "VampireEnabled": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Enable the command",
+        "tooltip": "Command will be enabled for usage.",
+        "group": "Vampire"
+    },
     "VampireCost": {
         "type": "numberbox",
         "value": 100,
@@ -866,6 +985,13 @@
         "label": "User Cooldown (minutes)",
         "tooltip": "How long the command should go on cooldown for",
         "group": "Vampire"
+    },
+    "LightHelpEnabled": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Enable the command",
+        "tooltip": "Command will be enabled for usage.",
+        "group": "Light Help"
     },
     "LightHelpCost": {
         "type": "numberbox",
@@ -918,6 +1044,13 @@
         "tooltip": "How long the command should go on cooldown for",
         "group": "Light Help"
     },
+    "MediumHelpEnabled": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Enable the command",
+        "tooltip": "Command will be enabled for usage.",
+        "group": "Medium Help"
+    },
     "MediumHelpCost": {
         "type": "numberbox",
         "value": 300,
@@ -968,6 +1101,13 @@
         "label": "User Cooldown (minutes)",
         "tooltip": "How long the command should go on cooldown for",
         "group": "Medium Help"
+    },
+    "HeavyHelpEnabled": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Enable the command",
+        "tooltip": "Command will be enabled for usage.",
+        "group": "Heavy Help"
     },
     "HeavyHelpCost": {
         "type": "numberbox",
@@ -1020,6 +1160,13 @@
         "tooltip": "How long the command should go on cooldown for",
         "group": "Heavy Help"
     },
+    "BattleOrdersEnabled": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Enable the command",
+        "tooltip": "Command will be enabled for usage.",
+        "group": "Battle Orders"
+    },
     "BattleOrdersCost": {
         "type": "numberbox",
         "value": 200,
@@ -1070,6 +1217,13 @@
         "label": "User Cooldown (minutes)",
         "tooltip": "How long the command should go on cooldown for",
         "group": "Battle Orders"
+    },
+    "MagicianEnabled": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Enable the command",
+        "tooltip": "Command will be enabled for usage.",
+        "group": "Magician"
     },
     "MagicianCost": {
         "type": "numberbox",
@@ -1122,6 +1276,13 @@
         "tooltip": "How long the command should go on cooldown for",
         "group": "Magician"
     },
+    "MeltyBloodEnabled": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Enable the command",
+        "tooltip": "Command will be enabled for usage.",
+        "group": "Melty Blood"
+    },
     "MeltyBloodCost": {
         "type": "numberbox",
         "value": 500,
@@ -1172,6 +1333,13 @@
         "label": "User Cooldown (minutes)",
         "tooltip": "How long the command should go on cooldown for",
         "group": "Melty Blood"
+    },
+    "FourBeastsEnabled": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Enable the command",
+        "tooltip": "Command will be enabled for usage.",
+        "group": "Four Beasts"
     },
     "FourBeastsCost": {
         "type": "numberbox",
@@ -1224,6 +1392,13 @@
         "tooltip": "How long the command should go on cooldown for",
         "group": "Four Beasts"
     },
+    "ZaWarudoEnabled": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Enable the command",
+        "tooltip": "Command will be enabled for usage.",
+        "group": "Za Warudo"
+    },
     "ZaWarudoCost": {
         "type": "numberbox",
         "value": 300,
@@ -1274,6 +1449,13 @@
         "label": "User Cooldown (minutes)",
         "tooltip": "How long the command should go on cooldown for",
         "group": "Za Warudo"
+    },
+    "HasteEnabled": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Enable the command",
+        "tooltip": "Command will be enabled for usage.",
+        "group": "Haste"
     },
     "HasteCost": {
         "type": "numberbox",

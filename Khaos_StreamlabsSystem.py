@@ -13,7 +13,7 @@ ScriptName = "SotN Khaos Script"
 Website = "https://taliczealot.github.io/"
 Description = "Enable chat interactivity for the Khaos tool for Symphony of the Night"
 Creator = "TalicZealot"
-Version = "1.0.1"
+Version = "1.0.2"
 
 #---------------------------
 #   Define Classes
@@ -25,6 +25,7 @@ class Settings(object):
             with codecs.open(settingsfile, encoding="utf-8-sig", mode="r") as f:
                 self.__dict__ = json.load(f, encoding="utf-8")
         except:
+            self.KhaosStatusEnabled = True
             self.KhaosStatusCost = 200
             self.KhaosStatusMaxCost = 200
             self.KhaosStatusScaling = 1
@@ -32,6 +33,7 @@ class Settings(object):
             self.KhaosStatusUserCooldown = 1
             self.KhaosStatusStartsOnCooldown = False
 
+            self.KhaosEquipmentEnabled = True
             self.KhaosEquipmentCost = 300
             self.KhaosEquipmentMaxCost = 1000
             self.KhaosEquipmentScaling = 1.5
@@ -39,6 +41,7 @@ class Settings(object):
             self.KhaosEquipmentUserCooldown = 6
             self.KhaosEquipmentStartsOnCooldown = False
 
+            self.KhaosStatsEnabled = True
             self.KhaosStatsCost = 400
             self.KhaosStatsMaxCost = 1200
             self.KhaosStatsScaling = 1.5
@@ -46,6 +49,7 @@ class Settings(object):
             self.KhaosStatsUserCooldown = 6
             self.KhaosStatsStartsOnCooldown = False
 
+            self.KhaosRelicsEnabled = True
             self.KhaosRelicsCost = 1000
             self.KhaosRelicsMaxCost = 8000
             self.KhaosRelicsScaling = 2
@@ -53,6 +57,7 @@ class Settings(object):
             self.KhaosRelicsUserCooldown = 22
             self.KhaosRelicsStartsOnCooldown = True
 
+            self.PandorasBoxEnabled = True
             self.PandorasBoxCost = 1000
             self.PandorasBoxMaxCost = 15000
             self.PandorasBoxScaling = 2.3
@@ -60,6 +65,7 @@ class Settings(object):
             self.PandorasBoxUserCooldown = 22
             self.PandorasBoxStartsOnCooldown = True
 
+            self.GambleEnabled = True
             self.GambleCost = 200
             self.GambleMaxCost = 3000
             self.GambleScaling = 2
@@ -67,6 +73,7 @@ class Settings(object):
             self.GambleUserCooldown = 2
             self.GambleStartsOnCooldown = False
 
+            self.BankruptEnabled = True
             self.BankruptCost = 1000
             self.BankruptMaxCost = 8000
             self.BankruptScaling = 2
@@ -74,6 +81,7 @@ class Settings(object):
             self.BankruptUserCooldown = 22
             self.BankruptStartsOnCooldown = True
 
+            self.WeakenEnabled = True
             self.WeakenCost = 1000
             self.WeakenMaxCost = 15000
             self.WeakenScaling = 2.3
@@ -81,6 +89,7 @@ class Settings(object):
             self.WeakenUserCooldown = 26
             self.WeakenStartsOnCooldown = True
 
+            self.RespawnBossesEnabled = True
             self.RespawnBossesCost = 400
             self.RespawnBossesMaxCost = 1200
             self.RespawnBossesScaling = 1.5
@@ -88,6 +97,7 @@ class Settings(object):
             self.RespawnBossesUserCooldown = 11
             self.RespawnBossesStartsOnCooldown = True
 
+            self.HonestGamerEnabled = True
             self.HonestGamerCost = 300
             self.HonestGamerMaxCost = 1000
             self.HonestGamerScaling = 1.2
@@ -95,6 +105,7 @@ class Settings(object):
             self.HonestGamerUserCooldown = 5
             self.HonestGamerStartsOnCooldown = False
 
+            self.SubweaponsOnlyEnabled = True
             self.SubweaponsOnlyCost = 600
             self.SubweaponsOnlyMaxCost = 1300
             self.SubweaponsOnlyScaling = 1.2
@@ -102,6 +113,7 @@ class Settings(object):
             self.SubweaponsOnlyUserCooldown = 5
             self.SubweaponsOnlyStartsOnCooldown = False
 
+            self.CrippleEnabled = True
             self.CrippleCost = 300
             self.CrippleMaxCost = 3000
             self.CrippleScaling = 2
@@ -109,6 +121,7 @@ class Settings(object):
             self.CrippleUserCooldown = 6
             self.CrippleStartsOnCooldown = False
 
+            self.BloodManaEnabled = True
             self.BloodManaCost = 200
             self.BloodManaMaxCost = 1300
             self.BloodManaScaling = 1.5
@@ -116,6 +129,7 @@ class Settings(object):
             self.BloodManaUserCooldown = 5
             self.BloodManaStartsOnCooldown = False
 
+            self.ThirstEnabled = True
             self.ThirstCost = 500
             self.ThirstMaxCost = 3000
             self.ThirstScaling = 1.5
@@ -123,6 +137,7 @@ class Settings(object):
             self.ThirstUserCooldown = 5
             self.ThirstStartsOnCooldown = True
 
+            self.HordeEnabled = True
             self.HordeCost = 500
             self.HordeMaxCost = 3000
             self.HordeScaling = 2
@@ -130,6 +145,7 @@ class Settings(object):
             self.HordeUserCooldown = 6
             self.HordeStartsOnCooldown = False
 
+            self.EnduranceEnabled = True
             self.EnduranceCost = 700
             self.EnduranceMaxCost = 7000
             self.EnduranceScaling = 2
@@ -137,6 +153,7 @@ class Settings(object):
             self.EnduranceUserCooldown = 5
             self.EnduranceStartsOnCooldown = False
 
+            self.VampireEnabled = True
             self.VampireCost = 100
             self.VampireMaxCost = 400
             self.VampireScaling = 1.3
@@ -144,6 +161,7 @@ class Settings(object):
             self.VampireUserCooldown = 5
             self.VampireStartsOnCooldown = False
 
+            self.LightHelpEnabled = True
             self.LightHelpCost = 100
             self.LightHelpMaxCost = 100
             self.LightHelpScaling = 1
@@ -151,6 +169,7 @@ class Settings(object):
             self.LightHelpUserCooldown = 1
             self.LightHelpStartsOnCooldown = False
 
+            self.MediumHelpEnabled = True
             self.MediumHelpCost = 300
             self.MediumHelpMaxCost = 1000
             self.MediumHelpScaling = 1.5
@@ -158,6 +177,7 @@ class Settings(object):
             self.MediumHelpUserCooldown = 2
             self.MediumHelpStartsOnCooldown = False
 
+            self.HeavyHelpEnabled = True
             self.HeavyHelpCost = 500
             self.HeavyHelpMaxCost = 2500
             self.HeavyHelpScaling = 1.5
@@ -165,6 +185,7 @@ class Settings(object):
             self.HeavyHelpUserCooldown = 5
             self.HeavyHelpStartsOnCooldown = True
 
+            self.BattleOrdersEnabled = True
             self.BattleOrdersCost = 200
             self.BattleOrdersMaxCost = 1000
             self.BattleOrdersScaling = 1.5
@@ -172,6 +193,7 @@ class Settings(object):
             self.BattleOrdersUserCooldown = 4
             self.BattleOrdersStartsOnCooldown = False
 
+            self.MagicianEnabled = True
             self.MagicianCost = 300
             self.MagicianMaxCost = 1000
             self.MagicianScaling = 1.5
@@ -179,6 +201,7 @@ class Settings(object):
             self.MagicianUserCooldown = 5
             self.MagicianStartsOnCooldown = True
 
+            self.MeltyBloodEnabled = True
             self.MeltyBloodCost = 500
             self.MeltyBloodMaxCost = 2000
             self.MeltyBloodScaling = 1.5
@@ -186,6 +209,7 @@ class Settings(object):
             self.MeltyBloodUserCooldown = 5
             self.MeltyBloodStartsOnCooldown = False
 
+            self.FourBeastsEnabled = True
             self.FourBeastsCost = 1000
             self.FourBeastsMaxCost = 4000
             self.FourBeastsScaling = 2
@@ -193,6 +217,7 @@ class Settings(object):
             self.FourBeastsUserCooldown = 5
             self.FourBeastsStartsOnCooldown = True
 
+            self.ZaWarudoEnabled = True
             self.ZaWarudoCost = 300
             self.ZaWarudoMaxCost = 1500
             self.ZaWarudoScaling = 1.5
@@ -200,6 +225,7 @@ class Settings(object):
             self.ZaWarudoUserCooldown = 5
             self.ZaWarudoStartsOnCooldown = False
 
+            self.HasteEnabled = True
             self.HasteCost = 500
             self.HasteMaxCost = 2000
             self.HasteScaling = 1.5
@@ -223,10 +249,11 @@ class Settings(object):
             Parent.Log(ScriptName, "Failed to save settings to file.")
 
 class Command:
-    def __init__(self, command, index, type, cost, maxCost, scaling, cooldown, userCooldown, startsOnCooldown):
+    def __init__(self, command, index, type, enabled, cost, maxCost, scaling, cooldown, userCooldown, startsOnCooldown):
         self.command = command
         self.index = index
         self.type = type
+        self.enabled = enabled
         self.cost = cost
         self.maxCost = maxCost
         self.scaling = scaling
@@ -304,34 +331,34 @@ def Init():
 
     # Load commands
     # Khaotic
-    ActionCommands["kstatus"] = Command("kstatus", 0, 0, ScriptSettings.KhaosStatusCost, ScriptSettings.KhaosStatusMaxCost, ScriptSettings.KhaosStatusScaling, ScriptSettings.KhaosStatusCooldown, ScriptSettings.KhaosStatusUserCooldown, ScriptSettings.KhaosStatusStartsOnCooldown)
-    ActionCommands["kequipment"] = Command("kequipment", 1, 0, ScriptSettings.KhaosEquipmentCost, ScriptSettings.KhaosEquipmentMaxCost, ScriptSettings.KhaosEquipmentScaling, ScriptSettings.KhaosEquipmentCooldown, ScriptSettings.KhaosEquipmentUserCooldown, ScriptSettings.KhaosEquipmentStartsOnCooldown)
-    ActionCommands["kstats"] = Command("kstats", 2, 0, ScriptSettings.KhaosStatsCost, ScriptSettings.KhaosStatsMaxCost, ScriptSettings.KhaosStatsScaling, ScriptSettings.KhaosStatsCooldown, ScriptSettings.KhaosStatsUserCooldown, ScriptSettings.KhaosStatsStartsOnCooldown)
-    ActionCommands["krelics"] = Command("krelics", 3, 0, ScriptSettings.KhaosRelicsCost, ScriptSettings.KhaosRelicsMaxCost, ScriptSettings.KhaosRelicsScaling, ScriptSettings.KhaosRelicsCooldown, ScriptSettings.KhaosRelicsUserCooldown, ScriptSettings.KhaosRelicsStartsOnCooldown)
-    ActionCommands["pandora"] = Command("pandora", 4, 0, ScriptSettings.PandorasBoxCost, ScriptSettings.PandorasBoxMaxCost, ScriptSettings.PandorasBoxScaling, ScriptSettings.PandorasBoxCooldown, ScriptSettings.PandorasBoxUserCooldown, ScriptSettings.PandorasBoxStartsOnCooldown)
-    ActionCommands["gamble"] = Command("gamble", 5, 0, ScriptSettings.GambleCost, ScriptSettings.GambleMaxCost, ScriptSettings.GambleScaling, ScriptSettings.GambleCooldown, ScriptSettings.GambleUserCooldown, ScriptSettings.GambleStartsOnCooldown)
+    ActionCommands["kstatus"] = Command("kstatus", 0, 0, ScriptSettings.KhaosStatusEnabled, ScriptSettings.KhaosStatusCost, ScriptSettings.KhaosStatusMaxCost, ScriptSettings.KhaosStatusScaling, ScriptSettings.KhaosStatusCooldown, ScriptSettings.KhaosStatusUserCooldown, ScriptSettings.KhaosStatusStartsOnCooldown)
+    ActionCommands["kequipment"] = Command("kequipment", 1, 0, ScriptSettings.KhaosEquipmentEnabled, ScriptSettings.KhaosEquipmentCost, ScriptSettings.KhaosEquipmentMaxCost, ScriptSettings.KhaosEquipmentScaling, ScriptSettings.KhaosEquipmentCooldown, ScriptSettings.KhaosEquipmentUserCooldown, ScriptSettings.KhaosEquipmentStartsOnCooldown)
+    ActionCommands["kstats"] = Command("kstats", 2, 0, ScriptSettings.KhaosStatsEnabled, ScriptSettings.KhaosStatsCost, ScriptSettings.KhaosStatsMaxCost, ScriptSettings.KhaosStatsScaling, ScriptSettings.KhaosStatsCooldown, ScriptSettings.KhaosStatsUserCooldown, ScriptSettings.KhaosStatsStartsOnCooldown)
+    ActionCommands["krelics"] = Command("krelics", 3, 0, ScriptSettings.KhaosRelicsEnabled, ScriptSettings.KhaosRelicsCost, ScriptSettings.KhaosRelicsMaxCost, ScriptSettings.KhaosRelicsScaling, ScriptSettings.KhaosRelicsCooldown, ScriptSettings.KhaosRelicsUserCooldown, ScriptSettings.KhaosRelicsStartsOnCooldown)
+    ActionCommands["pandora"] = Command("pandora", 4, 0, ScriptSettings.PandorasBoxEnabled, ScriptSettings.PandorasBoxCost, ScriptSettings.PandorasBoxMaxCost, ScriptSettings.PandorasBoxScaling, ScriptSettings.PandorasBoxCooldown, ScriptSettings.PandorasBoxUserCooldown, ScriptSettings.PandorasBoxStartsOnCooldown)
+    ActionCommands["gamble"] = Command("gamble", 5, 0, ScriptSettings.GambleEnabled, ScriptSettings.GambleCost, ScriptSettings.GambleMaxCost, ScriptSettings.GambleScaling, ScriptSettings.GambleCooldown, ScriptSettings.GambleUserCooldown, ScriptSettings.GambleStartsOnCooldown)
     # Debuffs
-    ActionCommands["bankrupt"] = Command("bankrupt", 6, 1, ScriptSettings.BankruptCost, ScriptSettings.BankruptMaxCost, ScriptSettings.BankruptScaling, ScriptSettings.BankruptCooldown, ScriptSettings.BankruptUserCooldown, ScriptSettings.BankruptStartsOnCooldown)
-    ActionCommands["weaken"] = Command("weaken", 7, 1, ScriptSettings.WeakenCost, ScriptSettings.WeakenMaxCost, ScriptSettings.WeakenScaling, ScriptSettings.WeakenCooldown, ScriptSettings.WeakenUserCooldown, ScriptSettings.WeakenStartsOnCooldown)
-    ActionCommands["respawnbosses"] = Command("respawnbosses", 8, 1, ScriptSettings.RespawnBossesCost, ScriptSettings.RespawnBossesMaxCost, ScriptSettings.RespawnBossesScaling, ScriptSettings.RespawnBossesCooldown, ScriptSettings.RespawnBossesUserCooldown, ScriptSettings.RespawnBossesStartsOnCooldown)
-    ActionCommands["honest"] = Command("honest", 9, 1, ScriptSettings.HonestGamerCost, ScriptSettings.HonestGamerMaxCost, ScriptSettings.HonestGamerScaling, ScriptSettings.HonestGamerCooldown, ScriptSettings.HonestGamerUserCooldown, ScriptSettings.HonestGamerStartsOnCooldown)
-    ActionCommands["subsonly"] = Command("subsonly", 10, 1, ScriptSettings.SubweaponsOnlyCost, ScriptSettings.SubweaponsOnlyMaxCost, ScriptSettings.SubweaponsOnlyScaling, ScriptSettings.SubweaponsOnlyCooldown, ScriptSettings.SubweaponsOnlyUserCooldown, ScriptSettings.SubweaponsOnlyStartsOnCooldown)
-    ActionCommands["cripple"] = Command("cripple", 11, 1, ScriptSettings.CrippleCost, ScriptSettings.CrippleMaxCost, ScriptSettings.CrippleScaling, ScriptSettings.CrippleCooldown, ScriptSettings.CrippleUserCooldown, ScriptSettings.CrippleStartsOnCooldown)
-    ActionCommands["bloodmana"] = Command("bloodmana", 12, 1, ScriptSettings.BloodManaCost, ScriptSettings.BloodManaMaxCost, ScriptSettings.BloodManaScaling, ScriptSettings.BloodManaCooldown, ScriptSettings.BloodManaUserCooldown, ScriptSettings.BloodManaStartsOnCooldown)
-    ActionCommands["thirst"] = Command("thirst", 13, 1, ScriptSettings.ThirstCost, ScriptSettings.ThirstMaxCost, ScriptSettings.ThirstScaling, ScriptSettings.ThirstCooldown, ScriptSettings.ThirstUserCooldown, ScriptSettings.ThirstStartsOnCooldown)
-    ActionCommands["horde"] = Command("horde", 14, 1, ScriptSettings.HordeCost, ScriptSettings.HordeMaxCost, ScriptSettings.HordeScaling, ScriptSettings.HordeCooldown, ScriptSettings.HordeUserCooldown, ScriptSettings.HordeStartsOnCooldown)
-    ActionCommands["endurance"] = Command("endurance", 15, 1, ScriptSettings.EnduranceCost, ScriptSettings.EnduranceMaxCost, ScriptSettings.EnduranceScaling, ScriptSettings.EnduranceCooldown, ScriptSettings.EnduranceUserCooldown, ScriptSettings.EnduranceStartsOnCooldown)
+    ActionCommands["bankrupt"] = Command("bankrupt", 6, 1, ScriptSettings.BankruptEnabled, ScriptSettings.BankruptCost, ScriptSettings.BankruptMaxCost, ScriptSettings.BankruptScaling, ScriptSettings.BankruptCooldown, ScriptSettings.BankruptUserCooldown, ScriptSettings.BankruptStartsOnCooldown)
+    ActionCommands["weaken"] = Command("weaken", 7, 1, ScriptSettings.WeakenEnabled, ScriptSettings.WeakenCost, ScriptSettings.WeakenMaxCost, ScriptSettings.WeakenScaling, ScriptSettings.WeakenCooldown, ScriptSettings.WeakenUserCooldown, ScriptSettings.WeakenStartsOnCooldown)
+    ActionCommands["respawnbosses"] = Command("respawnbosses", 8, 1, ScriptSettings.RespawnBossesEnabled, ScriptSettings.RespawnBossesCost, ScriptSettings.RespawnBossesMaxCost, ScriptSettings.RespawnBossesScaling, ScriptSettings.RespawnBossesCooldown, ScriptSettings.RespawnBossesUserCooldown, ScriptSettings.RespawnBossesStartsOnCooldown)
+    ActionCommands["honest"] = Command("honest", 9, 1, ScriptSettings.HonestGamerEnabled, ScriptSettings.HonestGamerCost, ScriptSettings.HonestGamerMaxCost, ScriptSettings.HonestGamerScaling, ScriptSettings.HonestGamerCooldown, ScriptSettings.HonestGamerUserCooldown, ScriptSettings.HonestGamerStartsOnCooldown)
+    ActionCommands["subsonly"] = Command("subsonly", 10, 1, ScriptSettings.SubweaponsOnlyEnabled, ScriptSettings.SubweaponsOnlyCost, ScriptSettings.SubweaponsOnlyMaxCost, ScriptSettings.SubweaponsOnlyScaling, ScriptSettings.SubweaponsOnlyCooldown, ScriptSettings.SubweaponsOnlyUserCooldown, ScriptSettings.SubweaponsOnlyStartsOnCooldown)
+    ActionCommands["cripple"] = Command("cripple", 11, 1, ScriptSettings.CrippleEnabled, ScriptSettings.CrippleCost, ScriptSettings.CrippleMaxCost, ScriptSettings.CrippleScaling, ScriptSettings.CrippleCooldown, ScriptSettings.CrippleUserCooldown, ScriptSettings.CrippleStartsOnCooldown)
+    ActionCommands["bloodmana"] = Command("bloodmana", 12, 1, ScriptSettings.BloodManaEnabled, ScriptSettings.BloodManaCost, ScriptSettings.BloodManaMaxCost, ScriptSettings.BloodManaScaling, ScriptSettings.BloodManaCooldown, ScriptSettings.BloodManaUserCooldown, ScriptSettings.BloodManaStartsOnCooldown)
+    ActionCommands["thirst"] = Command("thirst", 13, 1, ScriptSettings.ThirstEnabled, ScriptSettings.ThirstCost, ScriptSettings.ThirstMaxCost, ScriptSettings.ThirstScaling, ScriptSettings.ThirstCooldown, ScriptSettings.ThirstUserCooldown, ScriptSettings.ThirstStartsOnCooldown)
+    ActionCommands["horde"] = Command("horde", 14, 1, ScriptSettings.HordeEnabled, ScriptSettings.HordeCost, ScriptSettings.HordeMaxCost, ScriptSettings.HordeScaling, ScriptSettings.HordeCooldown, ScriptSettings.HordeUserCooldown, ScriptSettings.HordeStartsOnCooldown)
+    ActionCommands["endurance"] = Command("endurance", 15, 1, ScriptSettings.EnduranceEnabled, ScriptSettings.EnduranceCost, ScriptSettings.EnduranceMaxCost, ScriptSettings.EnduranceScaling, ScriptSettings.EnduranceCooldown, ScriptSettings.EnduranceUserCooldown, ScriptSettings.EnduranceStartsOnCooldown)
     # Buffs
-    ActionCommands["vampire"] = Command("vampire", 16, 2, ScriptSettings.VampireCost, ScriptSettings.VampireMaxCost, ScriptSettings.VampireScaling, ScriptSettings.VampireCooldown, ScriptSettings.VampireUserCooldown, ScriptSettings.VampireStartsOnCooldown)
-    ActionCommands["lighthelp"] = Command("lighthelp", 17, 2, ScriptSettings.LightHelpCost, ScriptSettings.LightHelpMaxCost, ScriptSettings.LightHelpScaling, ScriptSettings.LightHelpCooldown, ScriptSettings.LightHelpUserCooldown, ScriptSettings.LightHelpStartsOnCooldown)
-    ActionCommands["mediumhelp"] = Command("mediumhelp", 18, 2, ScriptSettings.MediumHelpCost, ScriptSettings.MediumHelpMaxCost, ScriptSettings.MediumHelpScaling, ScriptSettings.MediumHelpCooldown, ScriptSettings.MediumHelpUserCooldown, ScriptSettings.MediumHelpStartsOnCooldown)
-    ActionCommands["heavyhelp"] = Command("heavyhelp", 19, 2, ScriptSettings.HeavyHelpCost, ScriptSettings.HeavyHelpMaxCost, ScriptSettings.HeavyHelpScaling, ScriptSettings.HeavyHelpCooldown, ScriptSettings.HeavyHelpUserCooldown, ScriptSettings.HeavyHelpStartsOnCooldown)
-    ActionCommands["battleorders"] = Command("battleorders", 20, 2, ScriptSettings.BattleOrdersCost, ScriptSettings.BattleOrdersMaxCost, ScriptSettings.BattleOrdersScaling, ScriptSettings.BattleOrdersCooldown, ScriptSettings.BattleOrdersUserCooldown, ScriptSettings.BattleOrdersStartsOnCooldown)
-    ActionCommands["magician"] = Command("magician", 21, 2, ScriptSettings.MagicianCost, ScriptSettings.MagicianMaxCost, ScriptSettings.MagicianScaling, ScriptSettings.MagicianCooldown, ScriptSettings.MagicianUserCooldown, ScriptSettings.MagicianStartsOnCooldown)
-    ActionCommands["melty"] = Command("melty", 22, 2, ScriptSettings.MeltyBloodCost, ScriptSettings.MeltyBloodMaxCost, ScriptSettings.MeltyBloodScaling, ScriptSettings.MeltyBloodCooldown, ScriptSettings.MeltyBloodUserCooldown, ScriptSettings.MeltyBloodStartsOnCooldown)
-    ActionCommands["fourbeasts"] = Command("fourbeasts", 23, 2, ScriptSettings.FourBeastsCost, ScriptSettings.FourBeastsMaxCost, ScriptSettings.FourBeastsScaling, ScriptSettings.FourBeastsCooldown, ScriptSettings.FourBeastsUserCooldown, ScriptSettings.FourBeastsStartsOnCooldown)
-    ActionCommands["zawarudo"] = Command("zawarudo", 24, 2, ScriptSettings.ZaWarudoCost, ScriptSettings.ZaWarudoMaxCost, ScriptSettings.ZaWarudoScaling, ScriptSettings.ZaWarudoCooldown, ScriptSettings.ZaWarudoUserCooldown, ScriptSettings.ZaWarudoStartsOnCooldown)
-    ActionCommands["haste"] = Command("haste", 25, 2, ScriptSettings.HasteCost, ScriptSettings.HasteMaxCost, ScriptSettings.HasteScaling, ScriptSettings.HasteCooldown, ScriptSettings.HasteUserCooldown, ScriptSettings.HasteStartsOnCooldown)
+    ActionCommands["vampire"] = Command("vampire", 16, 2, ScriptSettings.VampireEnabled, ScriptSettings.VampireCost, ScriptSettings.VampireMaxCost, ScriptSettings.VampireScaling, ScriptSettings.VampireCooldown, ScriptSettings.VampireUserCooldown, ScriptSettings.VampireStartsOnCooldown)
+    ActionCommands["lighthelp"] = Command("lighthelp", 17, 2, ScriptSettings.LightHelpEnabled, ScriptSettings.LightHelpCost, ScriptSettings.LightHelpMaxCost, ScriptSettings.LightHelpScaling, ScriptSettings.LightHelpCooldown, ScriptSettings.LightHelpUserCooldown, ScriptSettings.LightHelpStartsOnCooldown)
+    ActionCommands["mediumhelp"] = Command("mediumhelp", 18, 2, ScriptSettings.MediumHelpEnabled, ScriptSettings.MediumHelpCost, ScriptSettings.MediumHelpMaxCost, ScriptSettings.MediumHelpScaling, ScriptSettings.MediumHelpCooldown, ScriptSettings.MediumHelpUserCooldown, ScriptSettings.MediumHelpStartsOnCooldown)
+    ActionCommands["heavyhelp"] = Command("heavyhelp", 19, 2, ScriptSettings.HeavyHelpEnabled, ScriptSettings.HeavyHelpCost, ScriptSettings.HeavyHelpMaxCost, ScriptSettings.HeavyHelpScaling, ScriptSettings.HeavyHelpCooldown, ScriptSettings.HeavyHelpUserCooldown, ScriptSettings.HeavyHelpStartsOnCooldown)
+    ActionCommands["battleorders"] = Command("battleorders", 20, 2, ScriptSettings.BattleOrdersEnabled, ScriptSettings.BattleOrdersCost, ScriptSettings.BattleOrdersMaxCost, ScriptSettings.BattleOrdersScaling, ScriptSettings.BattleOrdersCooldown, ScriptSettings.BattleOrdersUserCooldown, ScriptSettings.BattleOrdersStartsOnCooldown)
+    ActionCommands["magician"] = Command("magician", 21, 2, ScriptSettings.MagicianEnabled, ScriptSettings.MagicianCost, ScriptSettings.MagicianMaxCost, ScriptSettings.MagicianScaling, ScriptSettings.MagicianCooldown, ScriptSettings.MagicianUserCooldown, ScriptSettings.MagicianStartsOnCooldown)
+    ActionCommands["melty"] = Command("melty", 22, 2, ScriptSettings.MeltyBloodEnabled, ScriptSettings.MeltyBloodCost, ScriptSettings.MeltyBloodMaxCost, ScriptSettings.MeltyBloodScaling, ScriptSettings.MeltyBloodCooldown, ScriptSettings.MeltyBloodUserCooldown, ScriptSettings.MeltyBloodStartsOnCooldown)
+    ActionCommands["fourbeasts"] = Command("fourbeasts", 23, 2, ScriptSettings.FourBeastsEnabled, ScriptSettings.FourBeastsCost, ScriptSettings.FourBeastsMaxCost, ScriptSettings.FourBeastsScaling, ScriptSettings.FourBeastsCooldown, ScriptSettings.FourBeastsUserCooldown, ScriptSettings.FourBeastsStartsOnCooldown)
+    ActionCommands["zawarudo"] = Command("zawarudo", 24, 2, ScriptSettings.ZaWarudoEnabled, ScriptSettings.ZaWarudoCost, ScriptSettings.ZaWarudoMaxCost, ScriptSettings.ZaWarudoScaling, ScriptSettings.ZaWarudoCooldown, ScriptSettings.ZaWarudoUserCooldown, ScriptSettings.ZaWarudoStartsOnCooldown)
+    ActionCommands["haste"] = Command("haste", 25, 2, ScriptSettings.HasteEnabled, ScriptSettings.HasteCost, ScriptSettings.HasteMaxCost, ScriptSettings.HasteScaling, ScriptSettings.HasteCooldown, ScriptSettings.HasteUserCooldown, ScriptSettings.HasteStartsOnCooldown)
 
     # Output commands file for overlay
     with codecs.open(OverlayCommandsFile, encoding="utf-8-sig", mode="w+") as f:
@@ -369,7 +396,7 @@ def Execute(data):
         return
 
     for key in ActionCommands:
-        if data.GetParam(0).lower() == "!" + ActionCommands[key].command:
+        if ActionCommands[key].enabled and data.GetParam(0).lower() == "!" + ActionCommands[key].command:
             ActionCommands[key].Execute(data.User, data.UserName)
             return
 
